@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: poppins, sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 20px auto;
+}
+
+.chechout-title{
+    color: #3a3a3a;
+    font-family: inherit;
+    margin: 12px auto;
+}
+
+.checkout-form{
+    background-color: rgb(197, 195, 195);
+    width: fit-content;
+    padding: 50px; 
+    border-radius: 8px;
+}
+
+.Payment-input, input{
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: none;
+}
+
+.placeholder-btn{
+        font-size: 1.2rem;
+        padding: 12px 40px;
+        background-color: dodgerblue;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        border: none;
+        margin-top: 12px;
+        text-align: center;
+        cursor: pointer;
+        align-content: center;
+}
+
+.back-home{
+        font-size: 1.2rem;
+        padding: 12px 40px;
+        background-color: #3a3a3a;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        border: none;
+        margin-top: 12px;
+        cursor: pointer;
+}

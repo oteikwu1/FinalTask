@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+    <link rel="stylesheet" href="/stlyes/chechout.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="/html/product.html"></a>
+    </header>
+
+    <main>
+       
+
+        <form id="checkout-form" class="checkout-form">
+            <h2 class="chechout-title">Checkout</h2>
+            <h3>Billing Info</h3>
+            <label for="name">Enter Your Name</label><br>
+            <input type="text" id="name" placeholder="Enter Full Name" required> <br>
+
+            <label for="Address">Enter address</label> <br>
+            <input type="text" id="Address" placeholder="Enter Address" required> <br>
+
+            <label for="email">Email address</label> <br>
+            <input type="email" id="email" placeholder="ENter register email" required> <br>
+
+            <label for="phone number"> Enter Phone Number</label> <br>
+            <input type="tel" form="phone number" placeholder="Phone" required>
+
+       
+            <h3>Payment Info</h3>
+            <input type="text" placeholder="Card Number" required class="Payment-input"> <br>
+            <input type="text" placeholder="Expiry Date" required> <br>
+            <input type="text" placeholder="CVV" required>
+        
+            
+
+            <h3>Order Summary</h3>
+            <div id="order-summary"></div>
+            <p>Total: N<span id="checkout-total">0</span></p>
+
+            <button type="submit" class="placeholder-btn">Place Order</button>
+                <a href="/index.html" class="back-home">Back to home page</a>
+        </form>
+
+        
+    </main>
+
+   <script src="/script/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        renderCheckoutPage();
+    });
+</script>
+</body>
+
+</html>

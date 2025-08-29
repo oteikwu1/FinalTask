@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fina Project</title>
+    <link rel="stylesheet" href="/stlyes/cart.css">
+</head>
+
+<body>
+  <div class="cart-container">
+   <header>
+
+
+</header>
+
+
+<main>
+ 
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-items"></div>
+    <p class="cart-subtotal">Subtotal: ₦<span id="subtotal">0</span></p>
+    <p class="cart-total">Total: ₦<span id="total">0</span></p>
+    <a href="cart.html" class="cart-icon"> <span id="cart-count"></span></a>
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+      <a href="/index.html" class="back-btn"> Back to Checkout</a>
+  </div>
+  
+</main>
+
+ <script src="/script/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCartPage();
+    }); 
+  </script>
+  </script>
+</body>
+
+</html>
