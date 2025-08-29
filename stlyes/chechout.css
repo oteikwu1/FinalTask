@@ -21,7 +21,7 @@ body {
 
 .checkout-form{
     background-color: rgb(197, 195, 195);
-    width: fit-content;
+    width: 400px;
     padding: 50px; 
     border-radius: 8px;
 }
@@ -46,17 +46,23 @@ body {
         text-align: center;
         cursor: pointer;
         align-content: center;
+        margin-bottom: 32px;
+        width: 250px;
 }
 
 .back-home{
         font-size: 1.2rem;
         padding: 12px 40px;
-        background-color: #3a3a3a;
+        border: 2px solid #3a3a3a;
         border-radius: 8px;
-        color: #fff;
+        color:#3a3a3a;
         text-decoration: none;
-        display: block;
-        border: none;
-        margin-top: 12px;
+        margin: 16px auto;
         cursor: pointer;
+     
+}
+
+.back-home, a {
+    display: inline;
+    width: fit-content;
 }
