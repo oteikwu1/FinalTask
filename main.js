@@ -1,4 +1,4 @@
-//  GLOBAL VARIABLE
+
 
 const API_BASE = 'https://fakestoreapi.com/products';
 
@@ -17,7 +17,7 @@ function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// Update cart count in header(s)
+
 function updateCartCount() {
   const countElements = document.querySelectorAll('.cart-count, #cart-count');
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -26,7 +26,7 @@ function updateCartCount() {
     el.textContent = totalItems;
   });
 };
-// Serch fucnctionality
+
 const searchInput = document.querySelector('.search-icon-btn');
 
 function handleSearch(query) {
@@ -51,7 +51,7 @@ function handleSearch(query) {
       )
       .join('');
 
-    // Re-attach event listeners to the new buttons
+  
     document.querySelectorAll('.add-to-cart-btn').forEach((button) => {
       button.addEventListener('click', (event) => {
         const productCard = event.target.closest('.product-card');
