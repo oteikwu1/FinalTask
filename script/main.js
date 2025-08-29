@@ -1,6 +1,24 @@
-//  GLOBAL VARIABLES
+//  GLOBAL VARIABLE
+
+// const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+// const API_URL = 'https://fakestoreapi.com/products';
 // const API_BASE = 'https://fakestoreapi.com/products';
-const API_BASE = 'https://cors-anywhere.herokuapp.com/https://fakestoreapi.com/products';
+// const PROXY_URL = 'https://corsproxy.io/?u=';
+
+// fetch(PROXY_URL + API_URL) 
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.error('Fetch error:', error));
+
+const API_BASE = 'https://fakestoreapi.com/products';
+
+fetch(API_BASE)
+  .then((res) => res.json())
+  .then((data) => console.log(data))
+  .catch((err) => console.error('Fetch error:', err));
+
+
+
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let allProducts = [];
 
