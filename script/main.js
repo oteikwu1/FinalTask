@@ -1,5 +1,6 @@
 //  GLOBAL VARIABLES
-const API_BASE = 'https://fakestoreapi.com/products';
+// const API_BASE = 'https://fakestoreapi.com/products';
+const API_BASE = 'https://cors-anywhere.herokuapp.com/https://fakestoreapi.com/products';
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let allProducts = [];
 
