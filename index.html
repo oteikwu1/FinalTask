@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Final Task</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">My Shop</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#shop">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="cart-icon">
+            <i class="ph ph-shopping-cart-simple"></i>
+            <a href="/html/cart.html"><span class="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <section class="search-field">
+        <div class="search-field-container">
+            <div class="van-icon">
+                <i class="ph ph-truck"></i>
+                <h6>Free Delivery <br> on order over N500</h6>
+            </div>
+
+            <div class="search-fieldCotainer">
+                <div class="search-input">
+                    <input type="text" name="search" id="search" placeholder="Search products.........">
+                </div>
+
+                <div class="input-search-icon">
+                    <button class="search-icon-btn">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="user">
+                    <i class="ph ph-user-check"></i>
+                    <h6>Order & <br> Account</h6>
+                </div>
+            </div>
+
+            <div class="support">
+                <button class="support-btn">
+                    <a href="">
+                        <i class="ph ph-headset"></i>
+                    </a>
+                </button>
+                <h6>Support <br> 24/7</h6>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <h1>Welcome to Online Shop</h1>
+        <p>Best deals on all your favorite items</p>
+        <button onclick="document.getElementById('shop').scrollIntoView()">Shop Now</button>
+    </section>
+
+    <section id="shop">
+        <h2 class="FeaturedProduct">Featured Products</h2>
+        <div id="product-list" class="grid"></div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="email-container">
+                <label for="Email" class="subscribe">Subscribe to our newsletter <br>
+                </label>
+                <input type="email" id="Email" placeholder="Enter your register email">
+                <button class="subscribe-btn">
+                    <i class="ph ph-paper-plane-tilt"></i>
+                </button>
+            </div>
+
+            <div class="location">
+                <i class="ph ph-map-pin-line"></i>
+                <p>KodeCamp Final Task</p>
+            </div>
+            <div class="social-icon">
+                <p>Follow us on our Social media plartform</p>
+                <i class="ph ph-facebook-logo"></i>
+                <i class="ph ph-instagram-logo"></i>
+                <i class="ph ph-twitter-logo"></i>
+                <i class="ph ph-linkedin-logo"></i>
+            </div>
+
+        </div>
+        <hr>
+        <p class="all-right">&copy; 2025 KodeCamp Frontend Final Task. All rights reserved.</p>
+    </footer>
+
+    <script src="/script/main.js"></script>
+</body>
+
+</html>git
