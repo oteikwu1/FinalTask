@@ -1,9 +1,6 @@
 
 
 const API_BASE = 'https://fakestoreapi.com/products';
-fetch('https://fakestoreapi.com/products/1')
-  .then((res) => res.json())
-  .then((json) => console.log(json));
 
 fetch(API_BASE)
   .then((res) => res.json())
@@ -148,7 +145,7 @@ function renderCartPage() {
   if (!cartItemsContainer) return;
 
   if (cart.length === 0) {
-    cartItemsContainer.innerHTML = '<p>Your cart is empty</p>';
+    cartItemsContainer.innerHTML = '<p >Your cart is empty</p>';
     document.getElementById('subtotal').textContent = '0';
     document.getElementById('total').textContent = '0';
   } else {
