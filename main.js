@@ -1,6 +1,36 @@
 
-const API_URL = 'https://fakestoreapi.com/products'
-const API_BASE = 'https://fakestoreapi.com/products';
+ 
+  const API_BASE = 'https://api.escuelajs.co/api/v1/products';
+
+  fetch(API_BASE)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.error('Fetch error:', err));
+
+    [
+      {
+        id: 4,
+        title: 'Handmade Fresh Table',
+        slug: 'handmade-fresh-table',
+        price: 687,
+        description: 'Andy shoes are designed to keeping in...',
+        category: {
+          id: 5,
+          name: 'Others',
+          image: 'https://placehold.co/600x400',
+          slug: 'others',
+        },
+        images: [
+          'https://placehold.co/600x400',
+          'https://placehold.co/600x400',
+          'https://placehold.co/600x400',
+        ],
+      },
+      // ...
+    ];
+
+
+
 fetch(API_BASE)
   .then((res) => res.json())
   .then((data) => console.log(data))
@@ -10,6 +40,8 @@ fetch(API_BASE)
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let allProducts = [];
+
+
 
 // Save cart to localStorage
 function saveCart() {
@@ -41,7 +73,7 @@ function handleSearch(query) {
       .map(
         (product) => `
             <div class="product-card" data-product-id="${product.id}">
-                <img src="${product.image}" alt="${product.title}">
+                <img src="${product.images[0]}" alt="${product.title}">
                 <h3>${product.title}</h3>
                 <p>₦${product.price}</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
@@ -61,7 +93,7 @@ function handleSearch(query) {
             selectedProduct.id,
             selectedProduct.title,
             selectedProduct.price,
-            selectedProduct.image
+            selectedProduct.images[0]
           );
         }
       });
@@ -90,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
           .map(
             (product) => `
                         <div class="product-card" data-product-id="${product.id}">
-                            <img src="${product.image}" alt="${product.title}">
+                            <img src="${product.images[0]}" alt="${product.title}">
                             <h3>${product.title}</h3>
                             <p>₦${product.price}</p>
                             <button class="add-to-cart-btn">
@@ -113,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectedProduct.id,
                 selectedProduct.title,
                 selectedProduct.price,
-                selectedProduct.image
+                selectedProduct.images[0]
               );
             }
           });
