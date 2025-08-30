@@ -1,7 +1,6 @@
 
-
+const API_URL = 'https://fakestoreapi.com/products'
 const API_BASE = 'https://fakestoreapi.com/products';
-
 fetch(API_BASE)
   .then((res) => res.json())
   .then((data) => console.log(data))
